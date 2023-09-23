@@ -4,7 +4,7 @@ const userModel = require("./users");
 const postModel = require("./posts");
 const passport = require('passport');
 const path = require("path");
-const fs = require("fs");
+const fs = require('fs');
 const multer = require("multer");
 
 const storage = multer.diskStorage({
@@ -16,6 +16,7 @@ const storage = multer.diskStorage({
     cb(null, uniqueSuffix)
   }
 })
+
 
 const upload = multer({ storage: storage })
 
